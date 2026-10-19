@@ -3,13 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Marvellous | Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>CONTACTS</h1>
-    <P>0706478418</P>
-    <P>0776450974</P>
-    <h2>UNIVERSITY EMAIL</h2>
-    <p>yubukirizaoo16@gmail.com</p>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Marvellous</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menu" aria-controls="menu"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contact.html">Contacts</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container py-5">
+    <h1 class="text-center mb-4">Contact Me</h1>
+
+    <div class="row g-4">
+        <section class="col-md-5">
+            <h2>My Contact Information</h2>
+            <p><strong>Name:</strong> yubu kiriza</p>
+            <p><strong>Email:</strong> yubukiriza0016@gmail.com</p>
+            <p><strong>Phone:</strong> +256 706478418</p>
+            <p><strong>Location:</strong> [kampala, Uganda]</p>
+
+            <p><strong>GitHub:</strong>
+                <a href="https://github.com/YOUR-USERNAME" target="_blank"
+                   rel="noopener noreferrer">My GitHub Profile</a>
+            </p>
+
+            <p><strong>LinkedIn:</strong>
+                <a href="https://www.linkedin.com/" target="_blank"
+                   rel="noopener noreferrer">LinkedIn</a>
+            </p>
+        </section>
+
+        <section class="col-md-7">
+            <h2>Send Me a Message</h2>
+
+            <form action="#" method="post">
+                <div class="mb-3">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="fullName"
+                           name="fullName" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email"
+                           name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control" id="subject"
+                           name="subject" placeholder="Enter the subject" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message"
+                              rows="5" placeholder="Write your message"
+                              required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit Message</button>
+            </form>
+
+            <p class="text-muted mt-2">
+                Demonstration form: connect a form service or backend to receive messages.
+            </p>
+        </section>
+    </div>
+</main>
+
+<footer class="bg-dark text-white text-center p-3">
+    <p>&copy; 2026 Marvellous. All rights reserved.</p>
+    <a href="index.html" class="text-white">Home</a>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
